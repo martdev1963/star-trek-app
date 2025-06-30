@@ -524,3 +524,443 @@ Recommendation:
     For tech-savvy users → pip package.
 
 Would you like help with any specific part of the packaging process?
+--------------------------------------------------------------------------------------------------
+
+$ pip install pyinstaller
+Collecting pyinstaller
+  Downloading pyinstaller-6.14.1-py3-none-win_amd64.whl.metadata (8.3 kB)
+Collecting setuptools>=42.0.0 (from pyinstaller)
+  Downloading setuptools-80.9.0-py3-none-any.whl.metadata (6.6 kB)
+Collecting altgraph (from pyinstaller)
+  Downloading altgraph-0.17.4-py2.py3-none-any.whl.metadata (7.3 kB)
+Collecting pefile!=2024.8.26,>=2022.5.30 (from pyinstaller)
+  Downloading pefile-2023.2.7-py3-none-any.whl.metadata (1.4 kB)
+Collecting pywin32-ctypes>=0.2.1 (from pyinstaller)
+  Downloading pywin32_ctypes-0.2.3-py3-none-any.whl.metadata (3.9 kB)
+Collecting pyinstaller-hooks-contrib>=2025.4 (from pyinstaller)
+  Downloading pyinstaller_hooks_contrib-2025.5-py3-none-any.whl.metadata (16 kB)
+Requirement already satisfied: packaging>=22.0 in c:\python312\lib\site-packages (from pyinstaller) (23.2)
+Downloading pyinstaller-6.14.1-py3-none-win_amd64.whl (1.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 5.8 MB/s eta 0:00:00
+Downloading pefile-2023.2.7-py3-none-any.whl (71 kB)
+Downloading pyinstaller_hooks_contrib-2025.5-py3-none-any.whl (437 kB)
+Downloading pywin32_ctypes-0.2.3-py3-none-any.whl (30 kB)
+Downloading setuptools-80.9.0-py3-none-any.whl (1.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 5.0 MB/s eta 0:00:00
+Downloading altgraph-0.17.4-py2.py3-none-any.whl (21 kB)
+Installing collected packages: altgraph, setuptools, pywin32-ctypes, pefile, pyinstaller-hooks-contrib, pyinstaller
+Successfully installed altgraph-0.17.4 pefile-2023.2.7 pyinstaller-6.14.1 pyinstaller-hooks-contrib-2025.5 pywin32-ctypes-0.2.3 setuptools-80.9.0
+
+$ pyinstaller --onefile --windowed --name "CaptainsLogViewer" captains_log.py
+690 INFO: PyInstaller: 6.14.1, contrib hooks: 2025.5
+691 INFO: Python: 3.12.0
+741 INFO: Platform: Windows-10-10.0.19045-SP0
+741 INFO: Python environment: C:\Python312
+742 INFO: wrote C:\Users\Martin\Documents\Coding\star-trek-app\CaptainsLogViewer.spec
+760 INFO: Module search paths (PYTHONPATH):
+['C:\\Python312\\Scripts\\pyinstaller.exe',
+ 'C:\\Python312\\python312.zip',
+ 'C:\\Python312\\DLLs',
+ 'C:\\Python312\\Lib',
+ 'C:\\Python312',
+ 'C:\\Python312\\Lib\\site-packages',
+ 'C:\\Python312\\Lib\\site-packages\\setuptools\\_vendor',
+ 'C:\\Users\\Martin\\Documents\\Coding\\star-trek-app']
+1583 INFO: checking Analysis
+1584 INFO: Building Analysis because Analysis-00.toc is non existent
+1584 INFO: Running Analysis Analysis-00.toc
+1584 INFO: Target bytecode optimization level: 0
+1585 INFO: Initializing module dependency graph...
+1590 INFO: Initializing module graph hook caches...
+1624 INFO: Analyzing modules for base_library.zip ...
+4007 INFO: Processing standard module hook 'hook-encodings.py' from 'C:\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+9364 INFO: Processing standard module hook 'hook-pickle.py' from 'C:\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+12393 INFO: Processing standard module hook 'hook-heapq.py' from 'C:\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+15739 INFO: Caching module dependency graph...
+15794 INFO: Looking for Python shared library...
+15909 INFO: Using Python shared library: C:\Python312\python312.dll
+15910 INFO: Analyzing C:\Users\Martin\Documents\Coding\star-trek-app\captains_log.py
+15917 INFO: Processing standard module hook 'hook-PyQt5.py' from 'C:\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+17048 INFO: Processing standard module hook 'hook-PyQt5.QtWidgets.py' from 'C:\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+18411 INFO: Processing standard module hook 'hook-PyQt5.QtCore.py' from 'C:\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+20028 INFO: Processing standard module hook 'hook-PyQt5.QtGui.py' from 'C:\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+21027 INFO: Processing module hooks (post-graph stage)...
+21037 WARNING: Hidden import "sip" not found!
+21180 INFO: Performing binary vs. data reclassification (97 entries)
+21251 INFO: Looking for ctypes DLLs
+21267 INFO: Analyzing run-time hooks ...
+21269 INFO: Including run-time hook 'pyi_rth_inspect.py' from 'C:\\Python312\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+21276 INFO: Including run-time hook 'pyi_rth_pyqt5.py' from 'C:\\Python312\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+21281 INFO: Processing pre-find-module-path hook 'hook-_pyi_rth_utils.py' from 'C:\\Python312\\Lib\\site-packages\\PyInstaller\\hooks\\pre_find_module_path'
+21287 INFO: Processing standard module hook 'hook-_pyi_rth_utils.py' from 'C:\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+21295 INFO: Including run-time hook 'pyi_rth_pkgutil.py' from 'C:\\Python312\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+21310 INFO: Creating base_library.zip...
+21482 INFO: Looking for dynamic libraries
+21829 INFO: Extra DLL search directories (AddDllDirectory): ['C:\\Python312\\Lib\\site-packages\\PyQt5\\Qt5\\bin']
+21830 INFO: Extra DLL search directories (PATH): ['C:\\Python312\\Lib\\site-packages\\PyQt5\\Qt5\\bin']
+24977 INFO: Warnings written to C:\Users\Martin\Documents\Coding\star-trek-app\build\CaptainsLogViewer\warn-CaptainsLogViewer.txt
+25023 INFO: Graph cross-reference written to C:\Users\Martin\Documents\Coding\star-trek-app\build\CaptainsLogViewer\xref-CaptainsLogViewer.html
+25070 INFO: checking PYZ
+25071 INFO: Building PYZ because PYZ-00.toc is non existent
+25071 INFO: Building PYZ (ZlibArchive) C:\Users\Martin\Documents\Coding\star-trek-app\build\CaptainsLogViewer\PYZ-00.pyz
+25761 INFO: Building PYZ (ZlibArchive) C:\Users\Martin\Documents\Coding\star-trek-app\build\CaptainsLogViewer\PYZ-00.pyz completed successfully.
+25842 INFO: checking PKG
+25843 INFO: Building PKG because PKG-00.toc is non existent
+25843 INFO: Building PKG (CArchive) CaptainsLogViewer.pkg
+46060 INFO: Building PKG (CArchive) CaptainsLogViewer.pkg completed successfully.
+46067 INFO: Bootloader C:\Python312\Lib\site-packages\PyInstaller\bootloader\Windows-64bit-intel\runw.exe
+46068 INFO: checking EXE
+46069 INFO: Building EXE because EXE-00.toc is non existent
+46069 INFO: Building EXE from EXE-00.toc
+46069 INFO: Copying bootloader EXE to C:\Users\Martin\Documents\Coding\star-trek-app\dist\CaptainsLogViewer.exe
+46109 INFO: Copying icon to EXE
+46152 INFO: Copying 0 resources to EXE
+46157 INFO: Embedding manifest in EXE
+46194 INFO: Appending PKG archive to EXE
+46266 INFO: Fixing EXE headers
+46861 INFO: Building EXE from EXE-00.toc completed successfully.
+46873 INFO: Build complete! The results are available in: C:\Users\Martin\Documents\Coding\star-trek-app\dist
+
+------------------------------------------------------------------------------------------------------------
+
+    --onefile → Single executable
+
+    --windowed → No terminal window (GUI only)
+
+    --name → Sets the output filename
+
+3. Find the Executable
+
+    Windows: dist/CaptainsLogViewer.exe
+
+    Mac: dist/CaptainsLogViewer.app
+
+    Linux: dist/CaptainsLogViewer
+
+4. Distribute the Executable
+
+    Zip the dist folder and share it.
+
+    (Windows) Use Inno Setup to create an installer.
+
+Inno Setup:
+https://jrsoftware.org/isinfo.php
+
+---------------------------------------------------------------------------------------------------------------
+
+Inno Setup to create an installer
+
+Here's a step-by-step guide to creating a Windows installer for your Captain's Log Viewer app using Inno Setup:
+Step 1: Install Inno Setup
+
+    Download Inno Setup from https://jrsoftware.org/isinfo.php
+
+    Run the installer and follow the prompts (keep default settings).
+
+Step 2: Prepare Your Files
+
+    Build your app into a single .exe (e.g., using PyInstaller as shown earlier).
+
+        Your output should be in dist/CaptainsLogViewer.exe.
+
+    Optional: Add an icon (app_icon.ico), a license file (LICENSE.txt), and a README (README.txt).
+
+    Organize files in a folder (e.g., InstallerFiles):
+    text
+
+    InstallerFiles/
+    │── CaptainsLogViewer.exe
+    │── app_icon.ico
+    │── LICENSE.txt
+    │── README.txt
+
+Step 3: Create the Inno Setup Script
+
+    Open Inno Setup Compiler.
+
+    Click File → New to start the Script Wizard.
+
+    Fill in the details:
+
+        Application name: Captain's Log Viewer
+
+        Version: 1.0
+
+        Publisher: Your Name (optional)
+
+        Website: https://example.com (optional)
+
+    Application folder options:
+
+        Default: {pf}\CaptainsLogViewer
+        (Installs to C:\Program Files\CaptainsLogViewer).
+
+    Application files:
+
+        Add CaptainsLogViewer.exe as the main executable.
+
+        Add supporting files (app_icon.ico, LICENSE.txt, etc.).
+
+    Start Menu shortcuts:
+
+        Check "Create a shortcut in the Start Menu folder".
+
+    Desktop shortcut:
+
+        Check "Create a shortcut on the Desktop".
+
+    Installation modes:
+
+        Keep defaults (typically "Full installation").
+
+    Languages:
+
+        Select English (or others if needed).
+
+    Compiler settings:
+
+        Output directory: Output
+        (Where the installer .exe will be saved).
+
+        Output base filename: CaptainsLogViewer_Setup.
+
+    Click Finish to generate the script.
+
+Step 4: Customize the Script (Optional)
+
+The wizard generates a .iss file. You can edit it for advanced options:
+iss
+
+[Setup]
+AppName=Captain's Log Viewer
+AppVersion=1.0
+DefaultDirName={pf}\CaptainsLogViewer
+DefaultGroupName=Captain's Log Viewer
+OutputDir=Output
+OutputBaseFilename=CaptainsLogViewer_Setup
+Compression=lzma
+SolidCompression=yes
+SetupIconFile=app_icon.ico
+
+[Files]
+Source: "InstallerFiles\CaptainsLogViewer.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "InstallerFiles\app_icon.ico"; DestDir: "{app}"; Flags: ignoreversion
+Source: "InstallerFiles\LICENSE.txt"; DestDir: "{app}"; Flags: ignoreversion
+Source: "InstallerFiles\README.txt"; DestDir: "{app}"; Flags: ignoreversion
+
+[Icons]
+Name: "{group}\Captain's Log Viewer"; Filename: "{app}\CaptainsLogViewer.exe"; IconFilename: "{app}\app_icon.ico"
+Name: "{commondesktop}\Captain's Log Viewer"; Filename: "{app}\CaptainsLogViewer.exe"; IconFilename: "{app}\app_icon.ico"
+
+[Tasks]
+Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"
+
+Step 5: Compile the Installer
+
+    In Inno Setup Compiler, click File → Open and select your .iss script.
+
+    Click Build → Compile.
+
+    The installer (CaptainsLogViewer_Setup.exe) will be created in the Output folder.
+
+Step 6: Test the Installer
+
+    Run CaptainsLogViewer_Setup.exe.
+
+    Verify:
+
+        Installation to Program Files.
+
+        Start Menu and Desktop shortcuts.
+
+        The app launches correctly.
+
+Step 7: Distribute
+
+    Share the CaptainsLogViewer_Setup.exe file with users.
+
+    Optional: Upload to a website or package in a .zip file.
+
+Bonus: Add Uninstaller
+
+Inno Setup automatically adds an uninstaller. Users can remove the app via:
+
+    Control Panel → Programs and Features.
+
+Troubleshooting
+
+    If the app fails to run after installation:
+
+        Ensure all dependencies (like PyQt5) are bundled in the .exe.
+
+        Test on a clean Windows machine.
+
+That’s it! You now have a professional installer for your Captain's Log Viewer. 🚀
+
+-----------------------------------------------------------------------------------------------------
+About DLLs
+
+Whether your Captain's Log Viewer app needs DLL files depends on how you packaged it:
+1. If You Used PyInstaller (--onefile)
+
+    ✅ No external DLLs needed for end users.
+
+    PyInstaller bundles all dependencies (Python, PyQt5 DLLs, etc.) into the single .exe.
+
+    Exception: If your app uses external files (e.g., .json logs, .ico icons), include them separately in the installer.
+
+2. If You Used PyInstaller (--onedir)
+
+    ❌ DLLs are required (they’ll be in the dist folder alongside the .exe).
+
+    You must include them in the installer.
+
+3. If You Used cx_Freeze or Raw Python
+
+    ❌ DLLs are required (e.g., Python3.dll, Qt5Core.dll, etc.).
+
+    These tools don’t fully bundle everything into one .exe.
+
+How to Check if Your .exe Needs DLLs
+
+    Test on a clean Windows machine (or VM) without Python/PyQt5 installed.
+
+        If it runs, you’re good!
+
+        If it crashes with errors like:
+        text
+
+        The code execution cannot proceed because Qt5Core.dll was not found.
+
+        → You need to bundle DLLs.
+
+    Use Dependency Walker (download here):
+
+        Open your .exe in Dependency Walker.
+
+        Look for missing DLLs (highlighted in red/yellow).
+
+How to Fix DLL Issues
+Option 1: Use PyInstaller --onefile (Recommended)
+bash
+
+pyinstaller --onefile --windowed --icon=trek_icon.ico captains_log.py
+
+    This merges everything into one standalone .exe.
+
+Option 2: Manually Include DLLs in Inno Setup
+
+If you must use --onedir or cx_Freeze:
+
+    Copy all files from dist/ (PyInstaller) or build/ (cx_Freeze).
+
+    In Inno Setup, add the DLLs:
+    iss
+
+    [Files]
+    Source: "dist\*.dll"; DestDir: "{app}"; Flags: ignoreversion
+    Source: "dist\*.pyd"; DestDir: "{app}"; Flags: ignoreversion
+
+Key Takeaways
+
+    PyInstaller --onefile = No DLLs needed (just the .exe).
+
+    PyInstaller --onedir/cx_Freeze = Include DLLs.
+
+    Always test on a clean machine!
+
+If you used --onefile, your installer is ready to ship 🚀. Otherwise, bundle the DLLs as shown above.
+New chat
+
+What Are DLL Files?
+
+DLL (Dynamic Link Library) files are shared libraries used by Windows programs to perform common functions (like opening windows, handling graphics, or connecting to the internet). Instead of bundling the same code into every app, programs share DLLs to save space and memory.
+How DLLs Work
+
+    Shared Code:
+
+        Multiple programs can use the same DLL (e.g., Qt5Core.dll for PyQt5 apps).
+
+        Example: Your CaptainsLogViewer.exe might rely on:
+
+            Python3.dll (Python runtime)
+
+            Qt5Core.dll (PyQt5 GUI framework)
+
+            VCRUNTIME140.dll (Microsoft Visual C++ dependency)
+
+    Loaded Dynamically:
+
+        When your app runs, Windows loads the required DLLs into memory.
+
+        If a DLL is missing, you’ll see errors like:
+        text
+
+        The code execution cannot proceed because Qt5Core.dll was not found.
+
+Why Your Python App Might Need DLLs
+
+Python apps (especially with GUIs like PyQt5) depend on:
+
+    Python DLLs (e.g., Python3.dll)
+
+    Framework DLLs (e.g., PyQt5’s Qt5Core.dll, Qt5Gui.dll)
+
+    Microsoft Visual C++ Redistributables (e.g., vcruntime140.dll)
+
+How to Handle DLLs for Your App
+1. If Using PyInstaller (--onefile)
+
+✅ DLLs are bundled inside the .exe (no extra files needed).
+
+    PyInstaller extracts them to a temp folder at runtime.
+
+    Pros: Clean for end users.
+
+    Cons: Slightly slower startup (extraction overhead).
+
+2. If Using PyInstaller (--onedir)
+
+❌ DLLs sit next to the .exe (e.g., in dist/CaptainsLogViewer/).
+
+    You must include them in the installer.
+
+    Inno Setup Example:
+    iss
+
+    [Files]
+    Source: "dist\CaptainsLogViewer\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs
+
+3. If Using Raw Python
+
+❌ DLLs are scattered in:
+
+    Python’s DLLs folder
+
+    PyQt5’s installation folder
+
+    Microsoft Visual C++ Redistributables
+
+Fix: Use PyInstaller to bundle them automatically.
+How to Check Which DLLs Your App Uses
+
+    Dependency Walker (download here):
+
+        Open your .exe to see all required DLLs.
+
+        Red/yellow highlights = missing dependencies.
+
+    Command Line:
+    bash
+
+    pyinstaller --onefile --windowed captains_log.py
+
+        PyInstaller logs which DLLs it bundles.
+
+Key Takeaways
+
+    DLLs = Shared code your app needs to run.
+
+    PyInstaller --onefile: No user-visible DLLs (best for simple distribution).
+
+    Always test on a clean Windows machine to catch missing DLLs!

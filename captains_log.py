@@ -49,7 +49,36 @@ The crew has been surprisingly supportive of my temporary command, though Lt. Co
 Dr. McCoy just stopped by to tell me I'm doing "a damn fine job, for a comm officer." I'll take that as high praise coming from him.
 
 End log.
-🖖"""
+🖖""",
+""" Captain's Log, Stardate 5781.
+            Acting Captain Spock Recording
+
+            With Captain Kirk stranded on the surface of Sigma Draconis VI(having beamed down to "mediate" a dispute
+            between two factions who, it turns out, were merely debating the proper seasoning
+        for plomeek soup), I have resumed command.The crew’s reaction was...mixed.Lieutenant Uhura smiled.Dr.McCoy groaned.Mr.Scott immediately asked if this meant he could "recalibrate the warp core without all the paperwork."
+
+        We are currently towing a derelict Ferengi cargo vessel emitting erratic tachyon pulses.Initial scans suggest the ship’s hold contains 47 cases of what Mr.Chekov insists is "vintage Romulan ale," but which Dr.McCoy’s tricorder identifies as "barely potable engine coolant." The Ferengi crew abandoned ship after apparently losing a game of Tongo mid-warp.Curious.
+
+        Dr.McCoy has just informed me that "command looks good" on me, though he qualified this by adding, "like a hat on a giraffe." I fail to see the relevance of Earth ungulates to starship operations.
+
+        End log.
+        🖖""",
+        """ Captain's Log, Stardate 5914.5
+            Captain James T.Kirk Recording
+        I’ve retaken command from Spock after a particularly grueling diplomatic summit on Vulcan, where I was
+        required to attend seven hours of debate on whether the word "illogical" is, itself, logical. 
+        
+        Mr.Spock seemed to enjoy it. I nearly chewed my own arm off. We’ve intercepted a distress call from a Klingon
+        science vessel trapped in a temporal eddy. Their captain, Kor, claims they’ve been reliving the same 20 minutes
+       
+        for three weeks.Unfortunately, their solution—"shooting the anomaly with more torpedoes"—only made it worse. Mr.Spock suggests we
+        try harmonics.Dr.McCoy suggests we "let them figure it out."
+        Ensign Chekov just reported that the ship’s chronometers are now displaying next week’s duty rosters.Lt.Uhura has started
+       
+        receiving comms from herself.And Mr.Scott, in a stroke of either genius or madness, has begun
+        referring to the warp core as "she who must not be disturbed."
+        I’ve ordered coffee.Black.Triple strength. End log. 🖖
+        """
         ]
 
         self.initUI()
