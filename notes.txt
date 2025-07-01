@@ -1,5 +1,4 @@
 Features
-
   Captain's Log Viewer - Desktop App
 
 Here's a simple yet scalable desktop application that randomly displays Captain's Log entries from a Python list.
@@ -964,3 +963,43 @@ Key Takeaways
     PyInstaller --onefile: No user-visible DLLs (best for simple distribution).
 
     Always test on a clean Windows machine to catch missing DLLs!
+
+
+    https://www.pythonguis.com/tutorials/pyqt-basic-widgets/
+    https://www.pythonguis.com/tutorials/creating-your-first-pyqt-window/
+
+Future versions:
+ver 2.00
+React frontend stack w/
+Python backend stack
+
+ver 3.00
+Android
+
+Key Differences from PyQt5 Version:
+Feature	PyQt5 (Desktop)	React (Web)
+Installation	Needs .exe/installer	Runs in browser
+Dependencies	DLLs (if not bundled)	None (just JS)
+UI Framework	PyQt5	                React + Material-UI
+Deployment	    Inno Setup (Windows)	Vercel/Netlify (Web)
+Offline Use	    Yes	                    No (unless PWA)
+
+
+cloud deployment:
+https://vercel.com/
+https://vercel.com/new?teamSlug=martdev1963s-projects
+
+https://pages.github.com/
+Create a repository
+
+Head over to GitHub and create a new public repository named username.github.io, where username is your
+username (or organization name) on GitHub.
+
+If the first part of the repository doesn’t exactly match your username,
+it won’t work, so make sure to get it right.
+
+https://www.netlify.com/
+https://app.netlify.com/teams/martdev1963/projects
+
+
+
